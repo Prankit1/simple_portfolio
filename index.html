@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" media="screen and (max-width:800px)" href="tablet.css">
+    <link rel="stylesheet"  media="screen and (max-width:530px)"  href="phone.css">
+</head>
+<body>
+     <nav class="navbar">
+            <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#portfolio">PORTFOLIO</a></li>
+            <li><a href="#">PROJECTS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>     
+<section id="home">
+    <div class="main">
+        <h1 class="headings">I &nbsp; Am <br> Ankit Kumar</h1>
+        <button class="btn">
+            HIRE ME
+        </button>
+    </div>
+</section>
+
+<section id="about">
+    <div id="pic">
+        <h1 class="headings">About Me</h1>
+        <img src="picture/aki.png" alt="">
+        <div id="intro">
+            <h2>Ankit  Kumar</h2> 
+            <p>Hello visitor, as you know my name in home page, first of all thank you 
+                so much for visitng my simple single portfolio website.
+               <br> My name is Ankit Kumar, I born in Patna (Bihar). My father name is Amit Kumar & My mother name is Miran devi.
+               I am single child of my parent. I completed my matriculation from delhi model public school under CBSE Board and secured 10 CGPA in year 2017.
+               I also completed Diploma in computer science & engineering from New delhi under Board of technical education in year 2020.
+               Right now i am persuing my Btech. in computer science & engineering from Haldia Institute of Technology, Haldia (West bengal).
+               I am passionate about my work when i start something i finished in time .
+            </p>   
+        </div>    
+    </div>
+</section>
+<section id="portfolio">
+    <h1 class="headings">Portfolio</h1>
+    <div class="gallery">
+        <img src="picture/P (1).jpg " alt=" ">
+        <img src="picture/P (2).jpg" alt=" ">
+        <img src="picture/P (3).jpg" alt=" ">
+        <img src="picture/P (4).jpg" alt=" ">
+        <img src="picture/P (5).jpg" alt=" ">
+        <img src="picture/P (6).jpg" alt=" ">
+    </div>
+</section>
+
+<section id="contact">
+    <div class="container my-5 py-5">
+        <div class="row mb-5">
+        <div class="col-12">
+            <h4 class="text-center text-info fw-bold fs-4">How To Contact Me</h4>
+            <h4 class=" text-center display-4 fw-bolder"></h4>
+            <p class="lead text-center">Here I provided the contact form , from where you can easily send me your query.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <a href="https://en.wikipedia.org/wiki/Internet_of_things" target="blank">
+            <img src="picture/P (3).jpg" alt=" Internet of thing " class="w-75 h-75"></a>
+        </div>
+        <div class="col-md-6">
+            <form onsubmit="sendEmail(); reset(); return false;" >
+                <div class="mb-3">
+                    <label for="Name" class="form-label">Your Name</label>
+                    <input type="text" class="form-control" id="Name" placeholder=" ">
+                </div>
+                
+                        <div class="mb-3">
+                            <label for="exampleFormControlnput1" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="exampleFormControlnput1" placeholder="name@email.com ">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControTextarea1" class="form-label">TextArea</label>
+                            <textarea class="form-control" id="message" rows="3" placeholder="Write your Query"></textarea>
+                        </div>
+                       <button class="btna">Submit</button>
+            </form>            
+        </div>
+    </div>
+    </div>
+</section>
+
+<footer>
+        <div class="footer-content">
+            <h4>MR. NOOB </h4> <p> A beginner who wants to learn</p>
+               <ul class="socials">
+                   <li><a href="https://www.facebook.com/login/"target ="_blank"><i class="fab fa-facebook-square"></i></a></li>
+                   <li><a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"target ="_blank"><i class="fab fa-twitter-square"></i></i></a></li>
+                   <li><a href="mailto:officialprankit@gmail.com"target ="_blank"><i class="fas fa-envelope"></i></a></li>
+                   <li><a href="https://www.youtube.com/"target ="_blank"><i class="fab fa-youtube"></i></a></li>
+                   <li><a href="https://www.linkedin.com/in/ankit-kumar-2701a7224/"target ="_blank"><i class="fab fa-linkedin-square"></i></a></li>
+     
+               </ul>
+        </div>
+        <div class="footer-bottom">
+    <p> copyright &copy; 2022 
+        design by Mr Ankit
+    </p>
+        </div>
+    </footer>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail() {
+            Email.send({
+                SecureToken:"e6cde782-390f-475c-b7f4-78341303ff6d",
+                To: 'ankitayush.7391@gmail.com',
+                From: document.getElementById("exampleFormControlnput1").value,
+                Subject: "New Contact Form enquiry",
+                Body: "Name : " + document.getElementById("Name").value
+                        + "<br> Email : "+document.getElementById("exampleFormControlnput1").value
+                        + "<br> Message : "+document.getElementById("message").value
+            }).then(
+                message => alert("Message successfuly Sent")
+            );
+        }
+    </script>
+</body>
+</html>
